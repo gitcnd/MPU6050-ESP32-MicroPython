@@ -1,4 +1,4 @@
-# MPU6050-ESP8266-MicroPython
+# MPU6050-ESP32-MicroPython
 Simple library for MPU6050 on ESP32 with micropython
 
 The ESP32 has hardware i2c, so this lib has the software-only i2c methods removed
