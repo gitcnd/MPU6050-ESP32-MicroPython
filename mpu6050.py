@@ -5,14 +5,14 @@ class accel():
     def __init__(self, i2c, addr=0x68):
         self.iic = i2c
         self.addr = addr
-        self.iic.start()
+        #self.iic.start()
         self.iic.writeto(self.addr, bytearray([107, 0]))
-        self.iic.stop()
+        #self.iic.stop()
 
     def get_raw_values(self):
-        self.iic.start()
+        #self.iic.start()
         a = self.iic.readfrom_mem(self.addr, 0x3B, 14)
-        self.iic.stop()
+        #self.iic.stop()
         return a
 
     def get_ints(self):
